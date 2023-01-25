@@ -1,25 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import PostList from "./components/PostList/PostList";
 
 function App() {
+
+  let [posts, addPost] = [
+      {id: 1, title: "JavaScript1", body: "First post about JavaScript"},
+      {id: 2, title: "JavaScript2", body: "Second post About JavaScript"},
+      {id: 3, title: "JavaScript3", body: "Third post about JavaScript"},
+  ]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <PostList posts title="Posts about JavaScript"/>
     </div>
   );
 }
-
 export default App;
