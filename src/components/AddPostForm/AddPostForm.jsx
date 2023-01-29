@@ -20,7 +20,6 @@ const AddPostForm = ({addPost}) => {
                 <MyInput value={postText} onChange={(e)=>setPostText(e.target.value)} type="text" placeholder="Input post text"/>
                 <MyButton onClick={AddPost}>Add post</MyButton>
 
-
             </form>
         </div>
     );
